@@ -2,19 +2,20 @@
 <html lang="fr">
         <head>
             <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <title>ohmyfood</title>
-            <link rel="stylesheet" href="./scss/style.css">
             <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="./scss/style.css">
         </head>
         <body>
             <header>
                 <img class="logo" src="/images/logo/ohmyfood.png" alt="logo">
             </header>
             <section>
-                <nav>
+                <div>
                     <img> <!--trouver logo lieu-->
-                    <input type="text" placeholder="Paris, Belleville"
-                </div>
+                    <input type="text" placeholder="Paris, Belleville">
+                </div> 
                 <div>
                     <h1 class="titre">Réservez le menu qui vous convient</h1>
                     <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
@@ -42,31 +43,31 @@
                         </li>
                     </ul>   
                 </div>
-                <div>
+                <div class="restau">
                     <h1>Restaurants</h1>
                     <ul>
                         <li>
-                            <img>
+                            <img src="/images/restaurants/LaPaletteDuGout.jpg" alt="La palette du gout">
                             <p>Nouveau</p>
                             <h1>La palette du goût</h1>
                             <p>Ménilmontant</p>
                             <img>
                         </li>
                         <li>
-                            <img>
+                            <img src="/images/restaurants/LaNoteEnchantee.jpg" alt="La note enchantée">
                             <p>Nouveau</p>
                             <h1>La note enchantée</h1>
                             <p>Charonne</p>
                             <img>
                         </li>
                         <li>
-                            <img>
+                            <img src="/images/restaurants/ALaFrancaise.jpg" alt="A la francaise">
                             <h1>A la française</h1>
                             <p>Cité Rouge</p>
                             <img>
                         </li>
                         <li>
-                            <img>
+                            <img src="/images/restaurants/LeDeliceDesSens.jpg" alt="Le délice des sens">
                             <h1>Le délice des sens</h1>
                             <p>Folie-Méricourt</p>
                             <img>
@@ -74,5 +75,15 @@
                     </ul>
                 </div>
             </section>
+
+            <footer>
+                <img src="/images/logo/ohmyfood@2x.svg" alt="logofooter">
+                <ul class="footer_liste">
+                    <li>Proposer un restaurant</li>
+                    <li>Devenir partenaire</li>
+                    <li>Mentions légales</li>
+                    <li>Contact</li>
+                </ul>
+            </footer>
         </body>
 </html>

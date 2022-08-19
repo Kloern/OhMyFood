@@ -1,7 +1,31 @@
 body {
-  background-color: aqua;
   max-width: 599px;
   margin: auto;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.logo {
+  width: 40%;
+  padding: 20px;
+}
+
+.restau img {
+  width: 100%;
+}
+
+footer {
+  background-color: black;
+}
+
+.footer_liste {
+  color: white;
 }
 
 /*size tablet*/
