@@ -11,55 +11,79 @@ html {
   --color3: #99E2D0;
 }
 
+
+
 body {
   max-width: 599px;
   list-style: none;
 }
 
+body ul {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
+  color: initial;
 }
 
 div#container {
   height: 100vh;
 }
 
+div#container {
+  width: 100%;
+}
 
 /*------------header------------*/
 header.navBar {
   height: 10%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  box-shadow: 0 0 0.5rem #58585886;
+  z-index: 10;
+  position: relative;
+}
+
+/*svg*/
+#container .navBar .fa-arrow-left {
+  visibility: hidden;
 }
 
 header.navBar h1 {
   font-family: 'Shrikhand', Courier New, Courier, monospace;
-  display: flex;
-  justify-content: center;
-  font-size: 250%;
+  font-size: 200%;
 }
 
 /*------------main------------*/
-article#products {
-  background-color: green;
+section.article1 {
+  background-color: #f8f5f5;
+  display: flex;
+  justify-content: center;
 }
 
-section.article1 {
-  background-color: #e3dfdf;
+section .article1_input {
   display: flex;
-  justify-content: space-around;
+ flex-direction: row;
+ justify-content: center;
 }
 
 section.article1 i {
-  width: 10%;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
   padding: 15px;
 }
 
 section.article1 input {
-  height: 80%;
-  background-color: #e3dfdf;
+  background-color: transparent;
+  text-align: center;
   border: 0;
+  color: #000;
+  font-weight: bold;
+  padding-left: 0;
+  font-size: 15px;
 }
 
 section.article2 {
@@ -73,13 +97,14 @@ section.article2 {
 section.article2 h1 {
   text-align: center;
   font-weight: bold;
-  font-size: 200%;
+  font-size: 150%;
   padding: 10px;
 }
 
 section.article2 p {
+  color: #393939;
   text-align: center;
-  font-size: 120%;
+  font-size: 100%;
   padding: 10px;
 }
 
@@ -100,21 +125,31 @@ section.article3 {
   background-color: white;
 }
 
-section.article3 h1 {
+section.article3 h2 {
   font-weight: bold;
-  font-size: 200%;
+  font-size: 150%;
 }
 
 .article3 .fonctionnement {
-  height: 60px;
-  margin-bottom: 20px;
-  margin-top: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  height: 60px;
+  padding: 35px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   background-color: #fffafa;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.168) 0px 8px 8px;
+}
+
+.article3 .numero {
+  background-color:#9356DC;
+  color: #ffffff;
+  padding: 5px 10px 5px 10px;
+  border-radius: 25px;
+  margin-right: 30px;
+  margin-left: -40px;
 }
 
 .fonctionnement .tel {
@@ -134,50 +169,77 @@ section.article3 h1 {
   text-align: center;
 }
 
-section.article4 {
+#article4 {
   background-color: #fffafa;
 }
 
-section.article4 h1 {
+#article4 a {
+  display: flex;
+  align-items: center;
+}
+
+#article4 h2 {
   font-weight: bold;
-  font-size: 200%;
+  font-size: 150%;
   padding: 40px 30px 0 30px;
 }
 
-section.article4 .article4_restau {
+#article4 .article4_restau .card1 {
+  width: 90%;
+  height: 250px;
   margin: 20px;
   background-color: white;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.168) 0px 8px 8px;
 }
 
-section.article4 .article4_restau img {
+
+#article4 .article4_restau .nouveau {
+  color: #008766;
+  background: #99E2D0;
+  border-radius: 5px;
+  padding: 4px;
+  width: fit-content;
+  position:absolute;
+  right: 10%;
+  top: 135%;
+}
+
+#article4 .article4_restau .img11 {
   width: 100%;
-  height: 250px;
+  height: 180px;
   object-fit: cover;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
-section.article4 .description {
-  padding: 20px;
+#article4 .article4_restau .card1Text {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
-section.article4 .fa-heart {
+#article4 .article4_restau .card1Text .text11 h3 {
+  font-weight: bold;
+}
+
+section #article4 .fa-heart {
   color: initial;
+}
+
+#article4 .fa-heart:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
 }
 
 
 /*------------footer------------*/
 footer.basDePage {
-  bottom: 0;
-  width: 100%;
+  position:relative;
   background-color: #393939;
   color: white;
   padding: 30px;
-  margin-top: 70px;
 }
 
 footer.basDePage h1 {
@@ -186,19 +248,23 @@ footer.basDePage h1 {
   padding: 0 0 15px 0;
 }
 
+footer ul {
+  padding-left: 0;
+}
+
 footer.basDePage li {
   padding: 5px 0 5px 0;
 }
 
 
-/*size tablet*/
+/*-----------size tablet-----------*/
 @media screen and (max-width: 800px) and (min-width: 600px) {
   body {
     background-color: bisque;
   }
 }
 
-/*format web*/
+/*-----------format web-----------*/
 @media screen and (min-width: 801px) {
   body {
     background-color: green;
