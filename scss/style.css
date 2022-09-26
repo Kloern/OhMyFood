@@ -14,7 +14,7 @@ html {
 
 
 body {
-  max-width: 599px;
+  max-width: 100%;
   list-style: none;
 }
 
@@ -28,11 +28,148 @@ a {
 }
 
 div#container {
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
-div#container {
+/* ------------- LOADER -------------- */
+#spinner {
   width: 100%;
+  height: 100%;
+}
+
+.loader {  
+  animation: loader .01s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  background-color: hsla(0,0%,100%,.9);
+  z-index: 1000;
+  top: 40%;
+  position: fixed;
+  overflow: hidden;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  opacity: 1;
+  margin-left: 25%;
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  z-index: 10;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.2),
+    inset 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.loader span {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    -225deg,
+    #9356DC 0%,
+    #FF79DA 50%,
+    #99E2D0 100%
+  );
+  filter: blur(20px);
+  animation: animate 0.5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+} 
+/*------------Menu burger------------*/
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  right: 0 !important;
+}
+.menu__btn {
+  position: absolute;
+  top: 33px;
+  right: 25px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color2);
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: var(--color1);
+  font-family: 'Shrikhand',Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #ff79d941;
 }
 
 /*------------header------------*/
@@ -54,6 +191,7 @@ header.navBar {
 header.navBar h1 {
   font-family: 'Shrikhand', Courier New, Courier, monospace;
   font-size: 200%;
+  margin-top: 10px ;
 }
 
 /*------------main------------*/
@@ -66,7 +204,7 @@ section.article1 {
 section .article1_input {
   display: flex;
  flex-direction: row;
- justify-content: center;
+ padding-left: 60px;
 }
 
 section.article1 i {
@@ -78,7 +216,6 @@ section.article1 i {
 
 section.article1 input {
   background-color: transparent;
-  text-align: center;
   border: 0;
   color: #000;
   font-weight: bold;
@@ -115,9 +252,16 @@ section.article2 button {
   background: linear-gradient(#FF79DA, #9356DC);
 }
 
-section.article2 button a {
-  padding: 10px;
-  color: white;
+.article2 button p {
+  background-color: transparent;
+  color: #ffffff !important;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+section .article2 .button:hover {
+  background: linear-gradient(#ff79d9aa, #9256dcc5) !important;
 }
 
 section.article3 {
@@ -193,7 +337,6 @@ section.article3 h2 {
   box-shadow: rgba(0, 0, 0, 0.168) 0px 8px 8px;
 }
 
-
 #article4 .article4_restau .nouveau {
   color: #008766;
   background: #99E2D0;
@@ -202,7 +345,7 @@ section.article3 h2 {
   width: fit-content;
   position:absolute;
   right: 10%;
-  top: 135%;
+  margin-top: 10px;
 }
 
 #article4 .article4_restau .img11 {
@@ -233,6 +376,10 @@ section #article4 .fa-heart {
   background: linear-gradient(#9356DC, #FF79DA);
 }
 
+#article4 .test {
+  color: linear-gradient(#FF79DA, #9356DC);
+  font-size: 20px;
+}
 
 /*------------footer------------*/
 footer.basDePage {
@@ -267,8 +414,46 @@ footer.basDePage li {
 /*-----------format web-----------*/
 @media screen and (min-width: 801px) {
   body {
-    background-color: green;
     max-width: 1280px;
+  }
+
+  .article3 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .art4_restau {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+
+  .art4_restau a {
+    width: 45%;
+  }
+
+  .article4_restau .nouveau {
+    color: #008766;
+    background: #99E2D0;
+    border-radius: 5px;
+    padding: 4px;
+    width: fit-content;
+    position:absolute;
+    right: 8%;
+    margin-top: 10px;
+  }
+
+  .navBar .title .fa-solid {
+    top: 30px !important;
+  }
+
+  .basDePage ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 

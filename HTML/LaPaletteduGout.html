@@ -13,12 +13,25 @@
 <body>
     <div class="container">
         <header class="navBar restau">
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+            
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="/HTML/LaPaletteduGout.html">La palette du goût</a></li>
+                    <li><a class="menu__item" href="/HTML/LanoteEnchantee.html">La note enchantée</a></li>
+                    <li><a class="menu__item" href="/HTML/alaFrancaise.html">A la française</a></li>
+                    <li><a class="menu__item" href="/HTML/LeDelicedesSens.html">Le délice des sens</a></li>
+                </ul>
+            </div>
             <div class="title">
                 <a href="/index.html"><i class="fa-solid fa-arrow-left"></i></a>
                 <h1>Ohmyfood</h1>
             </div>
             <div class="img">
-                <img class="photo" src="/images/restaurants/LaNoteEnchantee.jpg" alt="noteEnchantee">    
+                <img class="photo" src="/images/restaurants/LaPaletteDuGout.jpg" alt="noteEnchantee">    
             </div>
         </header> 
         <main id="main_restau">
@@ -29,147 +42,149 @@
                         <i class="fa-regular fa-heart"></i>
                     </div>
                 </section>
-                <section class="art2 art_restau">
-                    <div>
-                        <h2>Entrées</h2>
-                            <div class="menu">
-
-                                <div class="menu1">
-                                    <div class="card2">
-                                        <h3>Fricassée d'escargot</h3>
-                                        <div class="card22">
-                                            <p>Au piment d'Espelette </p>
-                                            <p><strong>25€</strong></p>
-                                        </div>
-                                    </div>
-                                    <div class="choix">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                </div>
-
-                                <div class="menu1">
-                                    <div class="card2">
-                                        <h3>Foie gras de canard mi-cuit</h3>
-                                        <div class="card22">
-                                            <p>Et ses copeaux de truffe noire</p>
-                                            <p><strong>35€</strong></p>
-                                        </div>
-                                    </div>
-                                    <div class="choix">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                </div>
-
-                                <div class="menu1">
-                                    <div class="card2">
-                                        <h3>Oeuf au plat</h3>
-                                        <div class="card22">
-                                            <p>Assaisonné à la truffe sur lit de caviar</p>
-                                            <p><strong>20€</strong></p>
-                                        </div>
-                                    </div>
-                                    <div class="choix">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-
-                    
-                </section>
-                <section class="art3 art_restau">
-                    <div>
-                        <h2>Plats</h2>
-                            <div class="menu"> 
-
-                                <div class="menu1">
-                                    <div class="card2">
-                                        <h3>Filet de boeuf aux herbes</h3>
-                                        <div class="card22">
-                                            <p>Accompagné de sa ribambelle de légumes</p>
-                                            <p><strong>40€</strong></p>
-                                        </div>
-                                    </div>
-                                    <div class="choix">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                </div>
-
-                                <div class="menu1">
-                                    <div class="card2">
-                                        <h3>Parmentier de queue de boeuf</h3>
-                                        <div class="card22">
-                                            <p>À la truffe noire sur sa purée de panais</p>
-                                            <p><strong>35€</strong></p>
-                                        </div>
-                                    </div>
-                                    <div class="choix">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                </div>
-
-                                <div class="menu1">
-                                    <div class="card2">
-                                        <h3>Filet de turbot</h3>
-                                        <div class="card22">
-                                            <p>Aux agrumes</p>
-                                            <p><strong>44€</strong></p>
-                                        </div>
-                                    </div>
-                                    <div class="choix">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                </section>
-                <section class="art4 art_restau">
-                    <div>
-                        <h2>Desserts</h2>
+                <div class="entreePlatDessert">
+                    <section class="art2 art_restau">
                         <div>
-                            <div class="menu"> 
-                                <div class="menu1">
-                                    <div class="card2">
-                                        <h3>Paris-Brest</h3>
-                                        <div class="card22">
-                                            <p>Revisité</p>
-                                            <p><strong>18€</strong></p>
+                            <h2>Entrées</h2>
+                                <div class="menu">
+
+                                    <div class="menu1 entree_1">
+                                        <div class="card2">
+                                            <h3>Fricassée d'escargot</h3>
+                                            <div class="card22">
+                                                <p class="details">Au piment d'Espelette </p>
+                                                <p class="prix"><strong>25€</strong></p>
+                                            </div>
+                                        </div>
+                                        <div class="choix">
+                                            <i class="fa-solid fa-circle-check"></i>
                                         </div>
                                     </div>
-                                    <div class="choix">
-                                        <i class="fa-solid fa-circle-check"></i>
+
+                                    <div class="menu1 entree_2">
+                                        <div class="card2">
+                                            <h3>Foie gras de canard mi-cuit</h3>
+                                            <div class="card22">
+                                                <p class="details">Et ses copeaux de truffe noire</p>
+                                                <p class="prix"><strong>35€</strong></p>
+                                            </div>
+                                        </div>
+                                        <div class="choix">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu1 entree_3">
+                                        <div class="card2">
+                                            <h3>Oeuf au plat</h3>
+                                            <div class="card22">
+                                                <p class="details">Assaisonné à la truffe sur lit de caviar</p>
+                                                <p class="prix"><strong>20€</strong></p>
+                                            </div>
+                                        </div>
+                                        <div class="choix">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </div>
                                     </div>
                                 </div>
+                        </div>
 
-                                <div class="menu1">
-                                    <div class="card2">
-                                        <h3>Macaron au chocolat d'exception</h3>
-                                        <div class="card22">
-                                            <p>Et glace à la vanille de Madagascar</p>
-                                            <p><strong>22€</strong></p>
+                        
+                    </section>
+                    <section class="art3 art_restau">
+                        <div>
+                            <h2>Plats</h2>
+                                <div class="menu"> 
+
+                                    <div class="menu1 plat_1">
+                                        <div class="card2">
+                                            <h3>Filet de boeuf aux herbes</h3>
+                                            <div class="card22">
+                                                <p class="details">Accompagné de sa ribambelle de légumes</p>
+                                                <p class="prix"><strong>40€</strong></p>
+                                            </div>
+                                        </div>
+                                        <div class="choix">
+                                            <i class="fa-solid fa-circle-check"></i>
                                         </div>
                                     </div>
-                                    <div class="choix">
-                                        <i class="fa-solid fa-circle-check"></i>
+
+                                    <div class="menu1 plat_2">
+                                        <div class="card2">
+                                            <h3>Parmentier de queue de boeuf</h3>
+                                            <div class="card22">
+                                                <p class="details">À la truffe noire sur sa purée de panais</p>
+                                                <p class="prix"><strong>35€</strong></p>
+                                            </div>
+                                        </div>
+                                        <div class="choix">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu1 plat_3">
+                                        <div class="card2">
+                                            <h3>Filet de turbot</h3>
+                                            <div class="card22">
+                                                <p class="details">Aux agrumes</p>
+                                                <p class="prix"><strong>44€</strong></p>
+                                            </div>
+                                        </div>
+                                        <div class="choix">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </div>
                                     </div>
                                 </div>
-
-                                <div class="menu1">
-                                    <div class="card2">
-                                        <h3>Mousse au chocolat</h3>
-                                        <div class="card22">
-                                            <p>Au piment d'Espelette et à la truffe noire</p>
-                                            <p><strong>23€</strong></p>
+                        </div>
+                    </section>
+                    <section class="art4 art_restau">
+                        <div>
+                            <h2>Desserts</h2>
+                            <div>
+                                <div class="menu"> 
+                                    <div class="menu1 dessert_1">
+                                        <div class="card2">
+                                            <h3>Paris-Brest</h3>
+                                            <div class="card22">
+                                                <p class="details">Revisité</p>
+                                                <p class="prix"><strong>18€</strong></p>
+                                            </div>
+                                        </div>
+                                        <div class="choix">
+                                            <i class="fa-solid fa-circle-check"></i>
                                         </div>
                                     </div>
-                                    <div class="choix">
-                                        <i class="fa-solid fa-circle-check"></i>
+
+                                    <div class="menu1 dessert_2">
+                                        <div class="card2">
+                                            <h3>Macaron au chocolat d'exception</h3>
+                                            <div class="card22">
+                                                <p class="details">Et glace à la vanille de Madagascar</p>
+                                                <p class="prix"><strong>22€</strong></p>
+                                            </div>
+                                        </div>
+                                        <div class="choix">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu1 dessert_3">
+                                        <div class="card2">
+                                            <h3>Mousse au chocolat</h3>
+                                            <div class="card22">
+                                                <p class="details">Au piment d'Espelette et à la truffe noire</p>
+                                                <p class="prix"><strong>23€</strong></p>
+                                            </div>
+                                        </div>
+                                        <div class="choix">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
                 <section class="art5"> 
                     <div class="button">
                         <button href="#">

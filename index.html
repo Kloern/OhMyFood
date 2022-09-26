@@ -11,8 +11,27 @@
             <script src="https://kit.fontawesome.com/2074d45a7e.js" crossorigin="anonymous"></script>
         </head>
         <body>
+            
             <div id="container">
+                <div id="spinner">
+                    <div class="loader">
+                        <span></span>
+                    </div>
+                </div>
                 <header class="navBar">
+                    <div class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                          <span></span>
+                        </label>
+                    
+                        <ul class="menu__box">
+                            <li><a class="menu__item" href="/HTML/LaPaletteduGout.html">La palette du goût</a></li>
+                            <li><a class="menu__item" href="/HTML/LanoteEnchantee.html">La note enchantée</a></li>
+                            <li><a class="menu__item" href="/HTML/alaFrancaise.html">A la française</a></li>
+                            <li><a class="menu__item" href="/HTML/LeDelicedesSens.html">Le délice des sens</a></li>
+                        </ul>
+                    </div>
                     <i class="fa-solid fa-arrow-left"></i>
                     <h1>ohmyfood</h1>
                 </header> 
@@ -27,9 +46,11 @@
                         <section class="article2">
                             <h1>Réservez le menu qui vous convient</h1>
                             <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                            <button>
-                                <a href="#">Explorer nos restaurants</a>
-                            </button>
+                            <div class="button">
+                                <button href="#">
+                                    <p>Explorer nos restaurants</p>
+                                </button>
+                            </div>
                         </section>
                         <section class="article3">
                             <h2>Fonctionnement</h2>
@@ -56,133 +77,74 @@
                         </section>
                         <section id="article4">
                             <h2>Restaurants</h2>
-                            <a href="/HTML/LaPaletteduGout.html" class="article4_restau">
-                                <div class="card1">
-                                    <div class="card1Image">
-                                        <img src="/images/restaurants/LaPaletteDuGout.jpg" alt="la palette du goût" class="img11">
-                                        <p class="nouveau">Nouveau</p>
-                                    </div>
-                                    <div class="card1Text">
-                                        <div class="text11">
-                                            <h3>La palette du goût</h3>
-                                            <p>Ménilmontant</p>
+                            <div class="art4_restau">
+                                <a href="/HTML/LaPaletteduGout.html" class="article4_restau">
+                                    <div class="card1">
+                                        <div class="card1Image">
+                                            <p class="nouveau">Nouveau</p>
+                                            <img src="/images/restaurants/LaPaletteDuGout.jpg" alt="la palette du goût" class="img11">
                                         </div>
-                                        <div>
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="/HTML/LanoteEnchantee.html" class="article4_restau">
-                                <div class="card1">
-                                    <div class="card1Image">
-                                        <img src="/images/restaurants/LaNoteEnchantee.jpg" alt="la note enchantée" class="img11">
-                                        <p class="nouveau">Nouveau</p>
-                                    </div>
-                                    <div class="card1Text">
-                                        <div class="text11">
-                                            <h3>La note enchantée</h3>
-                                            <p>Charonne</p>
-                                        </div>
-                                        <div>
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="/HTML/alaFrancaise.html" class="article4_restau">
-                                <div class="card1">
-                                    <div class="card1Image">
-                                        <img src="/images/restaurants/ALaFrancaise.jpg" alt="A la française" class="img11">
-                                    </div>
-                                    <div class="card1Text">
-                                        <div class="text11">
-                                            <h3>A la française</h3>
-                                            <p>Cité rouge</p>
-                                        </div>
-                                        <div>
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="/HTML/LeDelicedesSens.html" class="article4_restau">
-                                <div class="card1">
-                                    <div class="card1Image">
-                                        <img src="/images/restaurants/LeDeliceDesSens.jpg" alt="le délice des sens" class="img11">
-                                    </div>
-                                    <div class="card1Text">
-                                        <div class="text11">
-                                            <h3>Le délice des sens</h3>
-                                            <p>Folie-Méricourt</p>
-                                        </div>
-                                        <div>
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-
-                           
-                           <!--  <ul>
-                                <li class="article4_restau">
-                                    <img src="/images/restaurants/LaPaletteDuGout.jpg" alt="La palette du goût">
-                                    <div class="description">
-                                        <div>
-                                            <h2>La palette du goût</h2>
-                                            <p>Ménilmontant</p>
-                                        </div>
-                                        <div>
-                                            <a href="#">
+                                        <div class="card1Text">
+                                            <div class="text11">
+                                                <h3>La palette du goût</h3>
+                                                <p>Ménilmontant</p>
+                                            </div>
+                                            <div>
                                                 <i class="fa-regular fa-heart"></i>
-                                            </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <li class="article4_restau">
-                                        </li>
-                                    <img src="/images/restaurants/LaNoteEnchantee.jpg" alt="La note enchantée">
-                                    <div class="description">
-                                        <div>
-                                            <h2>La note enchantée</h2>
-                                            <p>Charonne</p>
+                                </a>
+                                <a href="/HTML/LanoteEnchantee.html" class="article4_restau">
+                                    <div class="card1">
+                                        <div class="card1Image">
+                                            <p class="nouveau">Nouveau</p> 
+                                            <img src="/images/restaurants/LaNoteEnchantee.jpg" alt="la note enchantée" class="img11">
                                         </div>
-                                        <div>
-                                            <a href="#">
+                                        <div class="card1Text">
+                                            <div class="text11">
+                                                <h3>La note enchantée</h3>
+                                                <p>Charonne</p>
+                                            </div>
+                                            <div>
                                                 <i class="fa-regular fa-heart"></i>
-                                            </a>
+                                            </div>
                                         </div>
                                     </div>
-                                </li>
-                                <li class="article4_restau">
-                                    <img src="/images/restaurants/ALaFrancaise.jpg" alt="A la francaise">
-                                    <div class="description">
-                                        <div>
-                                            <h2>A la française</h2>
-                                            <p>Cité Rouge</p>
+                                </a>
+                                <a href="/HTML/alaFrancaise.html" class="article4_restau">
+                                    <div class="card1">
+                                        <div class="card1Image">
+                                            <img src="/images/restaurants/ALaFrancaise.jpg" alt="A la française" class="img11">
                                         </div>
-                                        <div>
-                                            <a href="#">
+                                        <div class="card1Text">
+                                            <div class="text11">
+                                                <h3>A la française</h3>
+                                                <p>Cité rouge</p>
+                                            </div>
+                                            <div>
                                                 <i class="fa-regular fa-heart"></i>
-                                            </a>
+                                            </div>
                                         </div>
                                     </div>
-                                </li>
-                                <li class="article4_restau">
-                                    <img src="/images/restaurants/LeDeliceDesSens.jpg" alt="Le délice des sens">
-                                    <div class="description">
-                                        <div>
-                                            <h2>Le délice des sens</h2>
-                                            <p>Folie-Méricourt</p>
+                                </a>
+                                <a href="/HTML/LeDelicedesSens.html" class="article4_restau">
+                                    <div class="card1">
+                                        <div class="card1Image">
+                                            <img src="/images/restaurants/LeDeliceDesSens.jpg" alt="le délice des sens" class="img11">
                                         </div>
-                                        <div>
-                                            <a href="#">
+                                        <div class="card1Text">
+                                            <div class="text11">
+                                                <h3>Le délice des sens</h3>
+                                                <p>Folie-Méricourt</p>
+                                            </div>
+                                            <div>
                                                 <i class="fa-regular fa-heart"></i>
-                                            </a>
+                                            </div>
                                         </div>
                                     </div>
-                                </li>
-                            </ul>
-                                    -->
+                                </a>
+                            </div>
                         </section>
                     </article>
                 </main>
@@ -198,4 +160,4 @@
                 </footer>
             </div>
         </body>
-</html>
+</html
