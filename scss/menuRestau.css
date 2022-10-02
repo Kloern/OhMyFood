@@ -77,16 +77,6 @@
     padding-left: 8px;
     margin-bottom: 0;
   }
-
-  .menu a:hover {
-    align-items: center;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
-    background-color: var(--color3);
-    width: 60px;
-    transform: translate(-51x, 0);
-    transition: transform 300ms ease-in-out;
-  }
   
 #main_restau .underline{
     width: 40px;
@@ -268,6 +258,8 @@ div .art5 {
     color: #ffffff;
     border: none;
     font-size: 17px;
+    padding: 10px;
+    cursor: pointer;
   }
 
 

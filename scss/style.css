@@ -197,11 +197,12 @@ section.article2 button {
   background: linear-gradient(#FF79DA, #9356DC);
 }
 
-.article2 button p {
+.article2 button {
   background-color: transparent;
   color: #ffffff !important;
   border: none;
-  font-size: 17px;
+  font-size: 12px;
+  padding: 10px;
   cursor: pointer;
 }
 
