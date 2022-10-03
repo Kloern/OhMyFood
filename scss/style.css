@@ -381,7 +381,7 @@ footer .mailto {
 
 
 /*-----------size tablet-----------*/
-@media screen and (max-width: 800px) and (min-width: 600px) {
+@media screen and (max-width: 1199px) and (min-width: 800px) {
 	.article3 .fonctionnement {
 		width: 30%;
 	}
@@ -391,7 +391,7 @@ footer .mailto {
   }
 
 /*-----------format web-----------*/
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 1200px) {
   body {
     max-width: 100%;
   }
