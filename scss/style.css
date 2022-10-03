@@ -382,6 +382,12 @@ footer .mailto {
 
 /*-----------size tablet-----------*/
 @media screen and (max-width: 800px) and (min-width: 600px) {
+	.article3 .fonctionnement {
+		width: 30%;
+	}
+	.article4_restau .nouveau1 {
+		left: 34%;
+	}
   }
 
 /*-----------format web-----------*/
