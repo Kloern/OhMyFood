@@ -385,9 +385,34 @@ footer .mailto {
 	.article3 .fonctionnement {
 		width: 30%;
 	}
+	
+	.article3 ul {
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: space-around;
+ 	}
+	
+	.art4_restau {
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    justify-content: space-around;
+	    margin-bottom: 10px;
+  	}
+	
 	.article4_restau .nouveau1 {
 		left: 34%;
 	}
+	
+	.art4_restau a {
+ 	   width: 45%;
+	 }
+	
+	.basDePage ul {
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: space-around;
+  	}
   }
 
 /*-----------format web-----------*/
