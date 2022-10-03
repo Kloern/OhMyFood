@@ -390,7 +390,7 @@ footer .mailto {
 /*-----------format web-----------*/
 @media screen and (min-width: 801px) {
   body {
-    max-width: 1280px;
+    max-width: 100%;
   }
 
   header.navBar h1 {
