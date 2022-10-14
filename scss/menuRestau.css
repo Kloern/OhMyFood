@@ -108,39 +108,39 @@
   }
 
   .entree_2 {
-    animation: fadein 2.5s;
-  }
-
-  .entree_3 {
     animation: fadein 3s;
   }
 
-  .entree_4 {
-    animation: fadein 3.2s;
-  }
-
-  .plat_1 {
-    animation: fadein 3.5s;
-  }
-
-  .plat_2 {
+  .entree_3 {
     animation: fadein 4s;
   }
 
-  .plat_3 {
-    animation: fadein 4.5s;
-  }
-
-  .dessert_1 {
+  .entree_4 {
     animation: fadein 5s;
   }
 
+  .plat_1 {
+    animation: fadein 6s;
+  }
+
+  .plat_2 {
+    animation: fadein 7s;
+  }
+
+  .plat_3 {
+    animation: fadein 8s;
+  }
+
+  .dessert_1 {
+    animation: fadein 9s;
+  }
+
   .dessert_2 {
-    animation: fadein 5.5s;
+    animation: fadein 10s;
   }
 
   .dessert_3 {
-    animation: fadein 6s
+    animation: fadein 11s
   }
 
   @keyframes fadein {
