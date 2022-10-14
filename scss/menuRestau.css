@@ -104,53 +104,54 @@
   }
 
   .entree_1 {
-    animation: fadein 2s;  
+    animation: appear 0.6s;  
   }
 
   .entree_2 {
-    animation: fadein 3s;
+    animation: appear 0.7s;
   }
 
   .entree_3 {
-    animation: fadein 4s;
+    animation: appear 0.8s;
   }
 
   .entree_4 {
-    animation: fadein 5s;
+    animation: appear 0.9s;
   }
 
   .plat_1 {
-    animation: fadein 6s;
+    animation: appear 1s;
   }
 
   .plat_2 {
-    animation: fadein 7s;
+    animation: appear 1.1s;
   }
 
   .plat_3 {
-    animation: fadein 8s;
+    animation: appear 1.2s;
   }
 
   .dessert_1 {
-    animation: fadein 9s;
+    animation: appear 1.3s;
   }
 
   .dessert_2 {
-    animation: fadein 10s;
+    animation: appear 1.4s;
   }
 
   .dessert_3 {
-    animation: fadein 11s
+    animation: appear 1.5s
   }
 
-  @keyframes fadein {
-    from {
-        opacity:0;
+  @keyframes appear {
+    0% {
+      transform: scale(0)
     }
-    to {
-        opacity:1;
+    100% {
+      transform: scale(1);
     }
-}
+  }
+
 
   #main_restau .card2 {
     width: 100%;
